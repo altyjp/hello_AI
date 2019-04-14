@@ -1,0 +1,59 @@
+<!DOCTYPE html>
+<!--
+To change this license header, choose License Headers in Project Properties.
+To change this template file, choose Tools | Templates
+and open the template in the editor.
+-->
+<html>
+    <head>
+        <title>AI画像認識</title>
+        <meta charset="UTF-8">
+        <link href="css/pc.css" rel ="stylesheet" type="text/css">
+        <link href="css/sp.css" media="screen and (max-width:768px)"
+              rel ="stylesheet" type="text/css">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    </head>
+    <body>
+        <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.1.0/jquery.min.js"></script>
+        <script src="https://cdnjs.cloudflare.com/ajax/libs/Chart.js/2.7.2/Chart.bundle.min.js"></script>
+        <script src="js/main_screen.js"></script>
+        <script src="js/connection.js"></script>
+        <script src="js/main_scrren_anime.js"></script>
+
+        <div id="baseitem">
+            <div id="mainitem">
+                <h2 style="margin:0;top:20px">experiment 1: Image recognition</h2>
+                <p>Draw a number(0〜9) in the box below.</p>
+                <canvas id="canvassample" width="280" height="280"></canvas>
+
+                <div>
+                    <button id="canvas_ctrl_clear" type="button" style="background-color: #ff0033" onclick="clearCanvas()">clear</button>
+                    <button id="canvas_ctrl_start" type="button" style="background-color: #3399ff" onclick="postImg()" value="1">start</button>
+                </div>
+                <div id="result">
+                    <h2>NO DATA</h2>
+                    <!-- control by connection.js -->
+                </div>
+                <p id="advance_settting_btn">▼ advance setting.</p>
+                <div id="advance_settting" style="display: none">
+                    <p>brush size：<br>
+                        <select name="adv_stg_brush_size" id="adv_stg_brush_size">
+                            <option value="1">1</option>
+                            <option value="3">3</option>
+                            <option value="5">5</option>
+                            <option value="7" selected>7(default)</option>
+                            <option value="9">9</option>
+                            <option value="11">11</option>
+                            <option value="13">13</option>
+                        </select></p>
+                </div>
+                <canvas id="result_graph" style="display: none"></canvas>
+                <hr/>
+                <p>copyright SR all rights reserved.</p>
+                <br/>
+            </div>
+        </div>
+
+
+    </body>
+</html>
