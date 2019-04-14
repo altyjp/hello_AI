@@ -1,6 +1,6 @@
 # hello_AI
 「ゼロから作るDeep Learning  ―Pythonで学ぶディープラーニングの理論と実装」を読んで作成した手書き画像識別ウェブアプリ。  
-フロントは部分はnode.jsで,バックエンドはpythonです。
+フロントは部分はnode.jsで,バックエンド(AI)はpythonです。
 
 # 起動方法
 1. `anaconda(python3.5.x)`と`node.js 11.x`を用意します。
