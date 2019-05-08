@@ -101,7 +101,6 @@ class convNet:
         return acc / x.shape[0]
 
     # [英]Backpropagation.誤差逆伝播法（ごさぎゃくでんぱほう）を使った微分（笑）
-    # なんでこんな日本語難しいんですかね？誰かおしえてください.
     def gradient(self, x, t):
         #forward
         self.loss(x, t)

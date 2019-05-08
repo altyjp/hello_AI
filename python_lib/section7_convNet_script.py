@@ -21,10 +21,6 @@ test_acc_list = []
 iter_per_epoch = max(train_size / batch_size, 1)
 
 
-print('######################################')
-print('CLB_AI ver0.3 with CNN')
-print('######################################')
-
 network = convNet()
 
 for i in range(iters_num):

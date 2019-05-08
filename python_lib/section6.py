@@ -4,8 +4,6 @@ import numpy as np
 
 #Adam法
 #現在のところ、人気のある方法
-#「俺は手札より、マジックカード「融合」を発動！
-# 手札のMomentumとAdagradを融合し、Adamを特殊召喚する！
 class Adam:
 
     """Adam (http://arxiv.org/abs/1412.6980v8)"""

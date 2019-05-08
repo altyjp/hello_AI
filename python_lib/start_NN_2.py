@@ -28,7 +28,7 @@ imgArray = np.asarray(inv_img)
 imgArray = imgArray /255
 imgArray = np.array([[imgArray]])
 
-#マーキュリーを呼び出す。
+#マーキュリー(人工知能の名前)を呼び出す。
 mercury = None
 with open(thisfolder + '/Mercury_20190223123101.pickle', mode='rb') as f:
     mercury = pickle.load(f)
