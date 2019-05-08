@@ -4,6 +4,8 @@
 
 # 起動方法
 1. `anaconda(python3.5.x)`と`node.js 11.x`を用意します。
+1. `section7_convNet_script.py`を起動し、学習を行います。`pickle`ファイルが出来上がるはずです。
+1. `start_NN_2.py`の33行目付近の`/Mercury_20190223123101.pickle`を前の項目で作ったものにリネームします。
 1. `npm init`で必要モジュールを入れます。
 1. `node .`で起動できます。
 
